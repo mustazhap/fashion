@@ -1,0 +1,33 @@
+
+.header{
+    height: 100px;
+    &__wrapper{
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav{
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 15px;
+        a{
+            margin-right: 45px;
+            color: $mainColor;
+        }
+    }
+
+    &__signin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            margin-bottom: 3px;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+}

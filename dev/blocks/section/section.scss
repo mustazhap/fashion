@@ -26,5 +26,10 @@
       align-items: center;
       justify-content: center;
     }
+
+    &-body{
+      display: flex;
+      box-sizing: border-box;
+    }
   }
   

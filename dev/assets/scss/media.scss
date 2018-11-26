@@ -1,12 +1,16 @@
 @import 'settings';
 
 @media screen and (max-width: 1440px){
-   
+  
 }
 
 
 @media screen and (max-width: 1170px){
-   
+    .section{
+        &__wrapper{
+            width: 100%;
+        }
+    }
 }
 
 

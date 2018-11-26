@@ -1,6 +1,11 @@
 
 .header{
     height: 100px;
+
+    &_admin{
+        box-shadow: 0 1px 7px rgba(1, 1, 1, 0.15);
+    }
+
     &__wrapper{
         padding: 0 60px;
         display: flex;
@@ -14,7 +19,7 @@
         line-height: 15px;
         a{
             margin-right: 45px;
-            color: $mainColor;
+            color: $main;
         }
     }
 
@@ -28,6 +33,13 @@
             font-weight: bold;
             font-size: 15px;
             line-height: 15px;
+        }
+
+        &_admin{
+            span{
+                margin-right: 10px;
+                margin-left: 10px;
+            }
         }
     }
 }

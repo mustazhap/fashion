@@ -4,6 +4,12 @@
 
     &_admin{
         box-shadow: 0 1px 7px rgba(1, 1, 1, 0.15);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 99;
     }
 
     &__wrapper{

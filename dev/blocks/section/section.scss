@@ -30,6 +30,10 @@
     &-body{
       display: flex;
       box-sizing: border-box;
+      position: relative;
+      margin-top: 100px;
+      transition: all 0.5s ease;
+      
     }
   }
   

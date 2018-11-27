@@ -1,7 +1,24 @@
 @import 'settings';
 
-@media screen and (max-width: 1440px){
-  
+@media screen and (max-width: 1515px){
+  .jobs__item-controll{
+      top: 13%;
+      transition: all .5s ease;
+  }
+}
+
+@media screen and (max-width: 1400px){
+    .sidebar{
+        transition: all .5s ease;
+        left: -100%;
+    }
+    .jobs{
+        transition: all .5s ease;
+        margin-left: 0;
+    }
+    .jobs__menu{
+        display: block;
+    }
 }
 
 
@@ -11,24 +28,54 @@
             width: 100%;
         }
     }
+    .header__wrapper{
+        padding: 0 30px;
+    }
 }
 
 
-@media screen and (max-width: 900px){   
+@media screen and (max-width: 1050px){   
+    .jobs__item-statis{
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
 
+    .jobs__item-row{
+        flex-wrap: wrap;
+    }
 }
 
 
-@media screen and (max-width: 660px){
-   
+@media screen and (max-width: 800px){
+   .jobs__item{
+       flex-direction: column;
+   }
+   .jobs__item-statis{
+       margin-top: 20px;
+   }
 }
 
 
-@media screen and (max-width: 500px){
-    
+@media screen and (max-width: 600px){
+    .jobs__item-controll{
+        display: flex;
+        flex-direction: column;
+        a{
+            margin-right: 0;
+        }
+    }
+
+    .sidebar{
+        max-width: 100%;
+    }
 }
 
 
 @media screen and (max-width: 400px){
-    
+    .jobs{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .header__signin{
+    }
 }

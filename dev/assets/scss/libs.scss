@@ -1,0 +1,14 @@
+@import 'libs/animate.css';
+
+.animated {
+
+  animation-duration: 2s;
+  
+ 
+  animation-delay: 1s;
+}
+
+
+  .slideInLeft{
+      animation-iteration-count: infinite;
+  }

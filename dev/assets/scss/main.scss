@@ -1,5 +1,6 @@
 // main
 @import 'settings';
+@import 'libs';
 
 html, body{
   margin: 0;
@@ -8,6 +9,7 @@ html, body{
   min-height: 100%;
   font-family: $Montserrat;
   box-sizing: border-box;
+  position: relative;
   *{
     box-sizing: border-box;
   }

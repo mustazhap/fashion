@@ -11,6 +11,7 @@
     justify-content: center;
     outline: none;
     background: white;
+    cursor: pointer;
 
     &:hover{
         text-decoration: none;
@@ -21,5 +22,11 @@
         border-color: #00aff0;
         color: white;
         outline: none;
+    }
+
+    &_blue{
+        background-color: #00aff0;
+        border-color: #00aff0;
+        color: #fff;
     }
 }

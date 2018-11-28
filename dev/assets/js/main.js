@@ -8,11 +8,13 @@
         if (w > 600){
         $(this).css("left","360px").removeClass("animated").find("i").css("transform", "rotate(180deg)");
         }else{
-          $(this).css({"left":"90%"}).removeClass("animated").find("i").css("transform", "rotate(180deg)");
-    }
+            $(this).css({"left":"90%"}).removeClass("animated").find("i").css("transform", "rotate(180deg)");
+            $("body").css("overflow","hidden");
+        }
     }else{
       // $("body").css("overflow-x", "visible");
       $(".sidebar").css("left", "-100%");
+      $("body").css("overflow","auto");
       // $(".jobs").css({"position": "relative", "left": "0px"});
       $(this).css("left","15px").addClass("animated").find("i").css("transform", "rotate(0)");  
     }
@@ -70,4 +72,15 @@ $('select').each(function(){
 
 // 
 
+
+// Textarea
+$(".textarea").click(function(event){
+    if($(".contact__mail").css("right") == "10px"){
+        event.stopPropagation();
+        $(".contact__mail").css({"opacity":"0", "visibility":"hidden"});
+    }
+    $(document).click(function() {
+        $(".contact__mail").css({"opacity":"1", "visibility":"visible"});
+    });
+})
 });

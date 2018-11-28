@@ -104,6 +104,10 @@
     }
   }
 
+  // 
+
+  // Textarea
+
   .textarea{
     border: 1px solid #c9cbcd;
     text-indent: 13px;
@@ -114,6 +118,7 @@
     outline: none;
     padding-top: 18px;
     color: $text;
+    border-radius: 5px;
     &:placeholder{
         color: #999fa2;
 

@@ -1,6 +1,7 @@
 @import 'settings';
 
 @media screen and (max-width: 1742px){
+    // Post
     .post__col{
         margin-right: 15px;
 
@@ -9,19 +10,26 @@
             margin-right: 0;
         }
     }
+    // 
   }
 @media screen and (max-width: 1515px){
-  .jobs__item-controll{
-      top: 13%;
-      transition: all .5s ease;
-  }
+    // Jobs
+    .jobs__item-controll{
+        top: 13%;
+        transition: all .5s ease;
+    }
+    // 
 }
 
 @media screen and (max-width: 1400px){
+    // Sidebar
     .sidebar{
         transition: all .5s ease;
         left: -100%;
     }
+    // 
+
+    // Jobs
     .jobs{
         transition: all .5s ease;
         margin-left: 0;
@@ -29,6 +37,8 @@
     .jobs__menu{
         display: block;
     }
+    // 
+
     // Post
     .post{
         margin-left: 0;
@@ -38,29 +48,64 @@
 
 @media screen and (max-width: 1250px){
     // Post
-   .post__input{
+    .post__input{
        flex-direction: column-reverse;
        align-items: flex-start;
        span{
            margin-bottom: 4px;
            margin-left: 0;
        }
-   }
+    }
+    //    
+
+    // Section
+    .section__wrapper{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    // 
+
+    // Contact
+    
+
+
 }
 
 @media screen and (max-width: 1170px){
+    // Section
     .section{
         &__wrapper{
             width: 100%;
         }
     }
+    // 
+
+    // Header
     .header__wrapper{
         padding: 0 30px;
     }
+    // 
+
+    // Contact
+    .contact__mail{
+        top: 382px;
+        right: 10px;
+
+        div{
+            font-size: 40px;
+        }
+
+        span{
+            margin-top: 0;
+            font-size: 17px;
+        }
+    }
+    // 
 }
 
 
 @media screen and (max-width: 1050px){   
+    // Jobs
     .jobs__item-statis{
         flex-wrap: wrap;
         margin-bottom: 5px;
@@ -69,34 +114,63 @@
     .jobs__item-row{
         flex-wrap: wrap;
     }
+    // 
 }
 
 
 @media screen and (max-width: 800px){
-   .jobs__item{
-       flex-direction: column;
-   }
-   .jobs__item-statis{
-       margin-top: 20px;
-   }
+    // Header
+    .header__nav{
+        display: none;
+    }
+    // 
+    // Jobs
+    .jobs__item{
+        flex-direction: column;
+    }
+    .jobs__item-statis{
+        margin-top: 20px;
+    }
+    //  
+    
+    // Sidebar Mob
+    .sidebar-mob{
+        display: flex;
+    }
+    // 
 
-   // Post
-   .post__row{
-       flex-direction: column;
-   }
-
-   .post__col{
-       margin: 0;
-       margin-bottom: 20px;
-       &:last-child{
-           margin: 0;
-       }
-   }
-   //
+    // Post
+    .post__row{
+        flex-direction: column;
+    }
+    .post__col{
+        margin: 0;
+        margin-bottom: 20px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    //
 }
 
+@media screen and (max-width: 700px){
+    // Contacts
+    .contact__wrapper{
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .contact__col{
+        &:last-child{
+            margin-top: 30px;
+            margin-left: 0;
+        }
+    }
+    // 
+}
 
 @media screen and (max-width: 600px){
+    // Jobs
     .jobs__item-controll{
         display: flex;
         flex-direction: column;
@@ -104,10 +178,13 @@
             margin-right: 0;
         }
     }
+    // 
 
+    // Sidebar
     .sidebar{
         max-width: 100%;
     }
+    // 
 
     // no jobs
     .jobs__not{
@@ -120,14 +197,38 @@
             margin-bottom: 30px;
         }
     }
+    // 
+}
+@media screen and (max-width: 500px){
+    // Contacts
+
+    // 
+
+    // Footer
+    .footer{
+        &__left{
+            flex-direction: column;
+            .line{
+                display: none;
+            }
+        }
+    }
+    // 
 }
 
-
 @media screen and (max-width: 400px){
+    // Jobs
     .jobs{
         padding-left: 30px;
         padding-right: 30px;
     }
+    // 
+
+    // Contacts
+    .contact__mail{
+        top: 395px;
+    }
+    //  
 
     // no jobs
     .jobs__not{
@@ -156,4 +257,12 @@
         margin-top: 10px;
     }
     //
+
+    // Sidebar Mob
+    .section__row{
+        .jobs__menu{
+            top: 223px;
+        }
+    }
+    // 
 }

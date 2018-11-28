@@ -1,3 +1,4 @@
+// Sidebar
 .sidebar{
     background: #edeff1;
     max-width: 351px;
@@ -84,6 +85,25 @@
             &:first-child{
                 margin-right: 10px;
             }
+        }
+    }
+    //
+    
+    // Sidebar Mob
+    &-mob{
+        display: none;
+        height: 100vh;
+        top: 0;
+
+        .header__logo{
+            padding-left: 50px;
+        }
+
+        .sidebar__menu{
+            margin-top: 30px;
+        }
+        .sidebar__nav{
+            display: none;
         }
     }
 }

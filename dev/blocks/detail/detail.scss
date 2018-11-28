@@ -1,0 +1,141 @@
+// Detail
+.detail{
+    &__wrapper{
+        padding-top: 78px;
+        padding-bottom: 108px;
+    }
+
+    &__top{
+        display: flex;
+        align-items: center;
+        max-width: 770px;
+    }
+    &__logo{
+        box-shadow: inset 0px 0px 0.5px 0.5px rgba(184,184,184,1);
+        border-radius: 5px;
+        width: 148px;
+        height: 148px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__name{
+        display: flex;
+        flex-direction: column;
+        margin-left: 31px;
+    }
+
+    &__type{
+        font-size: 24px;
+        font-weight: 700;
+        color: $text;
+        margin-bottom: 24px;
+        line-height: 1;
+    }
+
+    &__company{
+        font-size: 24px;
+        color: $text;
+        line-height: 1;
+        font-weight: 400;
+        a{
+            color: $main;
+            font-weight: 700;
+        }
+    }
+
+    &__body{
+        margin-top: 56px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e3e5e7;
+        max-width: 770px;
+    }
+    
+    &__title{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        color: $text;
+
+        &_green{
+            color: $active;
+        }
+    }
+
+    &__text{
+        color: #6b6d6e;
+        font-family: $Lato;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 25px;
+        margin-bottom: 36px;
+    }
+
+    &__ul{
+        margin-bottom: 15px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        font-family: $Lato;
+        font-size: 15px;
+        font-weight: 400;
+        color: $text;
+        line-height: 25px;
+        list-style: none;
+        &:before{
+            content: "-";
+            margin-right: 3px;
+        }
+    }
+
+    &__additional{
+        max-width: 770px;
+        margin-top: 39px;
+        padding-bottom: 38px;
+        border-bottom: 1px solid #e3e5e7;
+        margin-bottom: 35px;
+    }
+
+    .button{
+        width: 277px;
+    }
+
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col{
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        &:last-child{
+            margin-right: 0;
+        }
+        span{
+            margin-bottom: 20px;
+            color: $text;
+            font-family: $Lato;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        b{
+            display: flex;
+            margin-top: 5px;
+            div{
+                font-weight: bold;
+                font-size: 15px;
+                margin-right: 5px;
+            }
+            a{
+                color: $text;
+            }
+        }
+    }
+}
+// Detail End

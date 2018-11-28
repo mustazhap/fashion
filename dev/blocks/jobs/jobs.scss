@@ -7,6 +7,43 @@
     padding-bottom: 100px;
     transition: all 0.5s ease;
 
+    &_no{
+        height: 100%;
+    }
+    &__not{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        i{
+            color: #495057;
+            font-size: 150px;
+            font-weight: 400;
+        }
+
+        span{
+            margin-top: 75px;
+            color: #495057;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 75px;
+            text-align: center;
+        }
+        .button{
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 15px;
+            width: 203px;
+            height: 53px;
+            background: transparent;
+
+            &:active{
+                background: #00aff0;
+            }
+        }
+    }
     &__menu{
         position: fixed;
         top: 200px;

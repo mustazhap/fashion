@@ -1,0 +1,121 @@
+.input__text{
+    border: 1px solid #c9cbcd;
+    background-color: #ffffff;
+    color: $text;
+    font-size: 15px;
+    line-height: 15px;
+    height: 47px;
+    border-radius: 5px;
+    text-indent: 15px;
+    font-weight: 400;
+    outline: none;
+    margin-bottom: 29px;
+    max-width: 371px;
+    width: 100%;
+    &:placeholder{
+        color: #999fa2;
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+}
+
+// Select
+
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: #999fa2;
+    width: 100%;
+    max-width: 371px;
+    height: 47px;
+    margin-bottom: 29px;
+  }
+  .select-styled {
+    border: 1px solid #c9cbcd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in;
+
+    &:after {
+      content:"";
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #999fa2 transparent transparent transparent;
+      position: absolute;
+      top: 16px;
+      right: 10px;
+    }
+    &:hover {
+      background-color: darken(white, 1);
+    }
+    &:active, &.active {
+      
+      &:after {
+        top: 9px;
+        border-color: transparent transparent #999fa2 transparent;
+      }
+    }
+  }
+  
+  .select-options {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+    li {
+      margin: 0;
+      padding: 12px 0;
+      color: $text;
+      text-indent: 15px;
+        border: 1px solid #c9cbcd;
+     border-top: none;
+      transition: all 0.15s ease-in;
+      &:hover {
+        background: darken(white, 1);
+
+      }
+      &[rel="hide"] {
+        display: none;
+      }
+    }
+  }
+
+  .textarea{
+    border: 1px solid #c9cbcd;
+    text-indent: 13px;
+    font-family: $Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    outline: none;
+    padding-top: 18px;
+    color: $text;
+    &:placeholder{
+        color: #999fa2;
+
+    }
+  }

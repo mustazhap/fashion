@@ -1,5 +1,15 @@
 @import 'settings';
 
+@media screen and (max-width: 1742px){
+    .post__col{
+        margin-right: 15px;
+
+        &:last-child{
+            margin-left: 15px;
+            margin-right: 0;
+        }
+    }
+  }
 @media screen and (max-width: 1515px){
   .jobs__item-controll{
       top: 13%;
@@ -19,8 +29,24 @@
     .jobs__menu{
         display: block;
     }
+    // Post
+    .post{
+        margin-left: 0;
+    }
+    //
 }
 
+@media screen and (max-width: 1250px){
+    // Post
+   .post__input{
+       flex-direction: column-reverse;
+       align-items: flex-start;
+       span{
+           margin-bottom: 4px;
+           margin-left: 0;
+       }
+   }
+}
 
 @media screen and (max-width: 1170px){
     .section{
@@ -53,6 +79,20 @@
    .jobs__item-statis{
        margin-top: 20px;
    }
+
+   // Post
+   .post__row{
+       flex-direction: column;
+   }
+
+   .post__col{
+       margin: 0;
+       margin-bottom: 20px;
+       &:last-child{
+           margin: 0;
+       }
+   }
+   //
 }
 
 
@@ -68,6 +108,18 @@
     .sidebar{
         max-width: 100%;
     }
+
+    // no jobs
+    .jobs__not{
+        i{
+            font-size: 100px;
+        }
+        span{
+            font-size: 35px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 
@@ -76,6 +128,32 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-    .header__signin{
+
+    // no jobs
+    .jobs__not{
+        
+        span{
+            font-size: 25px;
+            margin-top: 15px;
+            margin-bottom: 17px;
+        }
+
+        .button{
+            width: 189px;
+            height: 47px;
+
+        }
     }
+    // 
+    
+    // Post
+    .post{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .post__upload span{
+        margin-top: 10px;
+    }
+    //
 }

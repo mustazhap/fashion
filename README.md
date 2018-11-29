@@ -1,6 +1,6 @@
 # front of site Fashion
 
-back: Akberdi Otkelbay
+back: Akberdi Otkelbay  
 front: Mustazhap Rustem 
 
 
@@ -15,6 +15,7 @@ front: Mustazhap Rustem
 - [ ] Main Page - Carousel.JS / Adaptive
 - [ ] Pricing Page 
 - [ ] About Page - Adaptive
-- [ ] Sign in -
+- [ ] Sign in 
+- [ ] Sign Up
 - [ ] Bags, other features
 

@@ -158,6 +158,16 @@
         }
     }
     // 
+
+    // Popup Apply for Job
+    .apply__wrapper{
+        max-width: 100%;
+        margin: 0;
+    }
+    .apply__bottom{
+        margin-bottom: 40px;
+    }
+    // 
 }
 
 @media screen and (max-width: 700px){
@@ -237,6 +247,18 @@
         margin-bottom: 7px;
     }
     // 
+
+    // Popup Apply for job
+    .apply__button{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .apply__descr{
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    // 
 }
 
 @media screen and (max-width: 400px){
@@ -310,4 +332,23 @@
         }
     }
     // 
+
+     // Popup Apply for job
+     .apply__button{
+        .file__label{
+            max-width: 100%
+        }
+    }
+    // 
+}
+
+// // By height
+@media screen and (max-height: 850px){
+    // Apply for Job (Modal)
+
+    .apply__wrapper{
+        height: 100%;
+        overflow-y: auto;
+        padding-top: 30px;
+    }
 }

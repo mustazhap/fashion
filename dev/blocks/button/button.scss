@@ -29,4 +29,18 @@
         border-color: $main;
         color: #fff;
     }
+
+    &_green{
+        background-color: $active;
+        border-color: $active;
+        color: #fff;
+        height: 48px;
+
+        &:active{
+            background-color: darken($active, 2);
+            border-color: darken($active, 2);
+            color: white;
+            outline: none;
+        }
+    }
 }

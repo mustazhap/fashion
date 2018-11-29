@@ -1,0 +1,112 @@
+// Apply
+.apply{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#4b4d4f, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    display: none;
+    &__wrapper{
+        margin: 40px;
+        max-width: 894px;
+        width: 100%;
+        padding: 55px 25px 30px;
+        background: #fff;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        .fas{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 25px;
+            color: $main;
+            cursor: pointer;
+        }
+    }
+
+    &__inner{
+        position: relative;
+        width: 100%;
+       
+    }
+
+    &__title{
+        font-size: 24px;
+        color: $main;
+        display: flex;
+        line-height: 1;
+        padding-bottom: 15px;
+        border-bottom: 3px solid $main;
+        margin-bottom: 35px;
+        font-weight: 700;
+    }
+
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .input__text{
+            max-width: 100%;
+        }
+    }
+
+    &__caption{
+        line-height: 1;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: $text;
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+    }
+
+    &__descr{
+        padding-left: 25px;
+        font-family: $Lato;
+        font-size: 15px;
+        line-height: 1;
+        color: #999fa2;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: flex-end;
+        .button{
+            width: 190px;
+        }
+    }
+}
+// 
+
+// Keyframes for animation Apply
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 } 
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+// 

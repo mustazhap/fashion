@@ -23,10 +23,11 @@ a{
 }
 
 // import files of blocks
-
 @import "../../blocks/button/button";
-
+@import "../../blocks/elements/elements";
 @import "../../blocks/section/section";
+
+// Index
 @import "../../blocks/header/header";
 @import "../../blocks/promo/promo";
 @import "../../blocks/priority/priority";
@@ -40,7 +41,6 @@ a{
 
 // Post
 @import "../../blocks/post/post";
-@import "../../blocks/input/input";
 
 // Contact
 @import "../../blocks/contact/contact";
@@ -51,6 +51,8 @@ a{
 // Apply for Job
 @import "../../blocks/apply/apply";
 
+// Search Page
+@import "../../blocks/search/search";
 
 
 

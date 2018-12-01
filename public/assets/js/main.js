@@ -134,3 +134,21 @@ $( '.file' ).each( function()
 
     });
 });
+// 
+
+// Spoiler
+$(".spoiler__title").click(function(){
+    $(this).toggleClass("spoiler__title-active");
+    $(this).next().slideToggle();
+})
+
+// 
+
+// Filter
+$(".filter-show").click(function(){
+    $(".search__col").slideToggle();
+});
+
+$(".filter-cancel").click(function(){
+    $(".search__col").slideToggle();
+});

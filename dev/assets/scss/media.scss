@@ -115,6 +115,21 @@
         flex-wrap: wrap;
     }
     // 
+
+    // Search
+    .search__sidebar{
+        max-width: 250px;
+    }
+
+    .search__item-row{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .search__item-text{
+        line-height: 20px;
+    }
+    // 
 }
 
 
@@ -184,6 +199,47 @@
         }
     }
     // 
+
+    
+    // Search
+    
+    .search{
+        &__wrapper{
+            flex-direction: column;
+            padding-top: 20px;
+
+            .input__text{
+                max-width: 100%;
+            }
+        }
+        &__sidebar{
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        &__input{
+            margin-bottom: 0;
+        }
+
+        &__top{
+            margin-bottom: 25px;
+        }
+
+        &__col{
+            display: none;
+        }
+
+        &__buttonrow{
+            display: flex;
+        }
+        &__item-row{
+            flex-direction: row;
+        }
+        .filter-show{
+            display: block;
+        }
+    }
+    // 
 }
 
 @media screen and (max-width: 600px){
@@ -215,6 +271,16 @@
         }
     }
     // 
+
+    // Search
+    .search{
+        &__item-row{
+            flex-direction: column;
+        }
+        &__item-info{
+            padding-top: 0;
+        }
+    }
 }
 @media screen and (max-width: 500px){
     // Contacts

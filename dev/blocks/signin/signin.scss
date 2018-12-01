@@ -1,0 +1,15 @@
+.signin{
+    height: calc(100% - 170px);
+
+    &__wrapper{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__block{
+        max-width: 371px;
+        width: 100%;
+    }
+}

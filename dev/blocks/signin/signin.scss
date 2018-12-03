@@ -16,6 +16,10 @@
         flex-direction: column;
     }
 
+    .button{
+        height: 47px;
+    }
+
     &__title{
         color: $text;
         font-size: 22px;
@@ -84,7 +88,7 @@
         }
         span{
             width: 90%;
-            margin: 0 12px;
+            text-align: center;
         }
     }
 }

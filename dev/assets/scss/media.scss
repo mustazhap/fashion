@@ -283,10 +283,6 @@
     }
 }
 @media screen and (max-width: 500px){
-    // Contacts
-
-    // 
-
     // Footer
     .footer{
         &__left{
@@ -325,6 +321,16 @@
         margin-top: 10px;
     }
     // 
+
+    // Signin
+    .signin{
+        &__line{
+            &:before, &:after{
+                width: 70%;
+            }
+        }
+    }
+    // 
 }
 
 @media screen and (max-width: 400px){
@@ -333,7 +339,6 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-
     // 
 
     // Detail Job
@@ -423,6 +428,20 @@
     .header__wrapper{
         margin-left: 0;
         margin-right: 0;
+    }
+    // 
+
+     // Signin
+     .signin{
+        &__line{
+            &:before, &:after{
+                width: 50%;
+            }
+
+            span{
+                width: 90%;
+            }
+        }
     }
     // 
 }

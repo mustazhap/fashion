@@ -406,6 +406,25 @@
         }
     }
     // 
+
+    // Signin
+    .signin{
+        &__title{
+            line-height: 1.3;
+        }
+
+        &__block{
+            margin: 20px 0;
+        }
+    }
+    // 
+
+    // Header
+    .header__wrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    // 
 }
 
 // // By height

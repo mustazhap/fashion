@@ -15,7 +15,7 @@ front: Mustazhap Rustem
 - [ ] Main Page - Carousel.JS / Adaptive
 - [ ] Pricing Page 
 - [ ] About Page - Adaptive
-- [ ] Sign in 
-- [ ] Sign Up
+- [x] Sign in 
+- [x] Sign Up
 - [ ] Bags, other features
 

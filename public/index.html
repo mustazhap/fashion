@@ -19,117 +19,292 @@
 
 <!-- Header -->
 <header class="header section">
-    <div class="header__wrapper section__wrapper section__wrapper_full">
-       <a href="/" class="header__logo"><img src="assets/img/logo.png" alt="Logo"></a>
-       <nav class="header__nav">
-           <a href="#!">Jobs</a>
-           <a href="#!">Consulting</a>
-           <a href="#!">About</a>
-           <a href="#!">Contacts</a>           
-       </nav>
-       <div class="header__signin header__signin_admin"><div data-icon="&#xe08a"></div><span>Sign In</span> </div>
+    <div class="header__wrapper section__wrapper">
+       <a href="/" class="header__logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item active">Главная</a>
+            <a href="#" class="header__nav-item">Наши партнеры</a>
+            <a href="#" class="header__nav-item">О проекте</a>
+            <a href="#" class="header__nav-item">Контакты</a>
+        </nav>
+        <div class="burger-wrap">
+            <a class="burger">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <nav class="burger__nav">
+                <a href="#" class="header__nav-item active">Главная</a>
+                <a href="#" class="header__nav-item">Наши партнеры</a>
+                <a href="#" class="header__nav-item">О проекте</a>
+                <a href="#" class="header__nav-item">Контакты</a>
+            </nav>
+            <div class="burger__footer">
+                <span>
+                    Все права защищены <br>ТОО "3 TIL" 2018
+                </span>
+            </div>
+        </div>
     </div>
 </header>
 <!-- Header End -->
-<section class="promo section">
-    <div class="promo__wrapper section__wrapper">
-        <h1 class="promo__title">Fine Fashion Consulting<br>
-            <b>Very first Network for Jobs and Internships </b></br>
-            in Kazakhstan</h1>
-        <a href="#!" class="button">Search for Job</a>
-    </div>
-</section>
-<section class="priority section">
-    <div class="priority__wrapper section__wrapper">
-        <h3 class="section__title">Priority Jobs</h3>
-        <div class="priority__row">
-            <div class="priority__item">
-                <div class="priority__item-row">
-                <span class="priority__item-company">Black Star store</span>
-                <span class="priority__item-title">Entry-level jobs to prove your 
-                    need to be great</span>
-                </div>
-                <div class="priority__item-bottom">
-                    <a href="#" class="priority__item-more">Read More <span data-icon="&#x35"></span></a>
-                    <span class="priority__item-place"><div data-icon=""></div> Astana</span>
-                </div>
-            </div>
-            <div class="priority__item">
-                <div class="priority__item-row">
-                <span class="priority__item-company">Black Star store</span>
-                <span class="priority__item-title">Entry-level jobs to prove your 
-                    need to be great</span>
-                </div>
-                <div class="priority__item-bottom">
-                    <a href="#" class="priority__item-more">Read More <span data-icon="&#x35"></span></a>
-                    <span class="priority__item-place"><div data-icon=""></div> Astana</span>
-                </div>
-            </div>
-            <div class="priority__item">
-                <div class="priority__item-row">
-                <span class="priority__item-company">Black Star store</span>
-                <span class="priority__item-title">Entry-level jobs to prove your 
-                    need to be great</span>
-                </div>
-                <div class="priority__item-bottom">
-                    <a href="#" class="priority__item-more">Read More <span data-icon="&#x35"></span></a>
-                    <span class="priority__item-place"><div data-icon=""></div> Astana</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Follow Block -->
-<section class="follow section">
-    <div class="follow__wrapper section__wrapper">
-        <div class="follow__block">
-            <h3 class="section__title">Follow us in social media</h3>
-            <p class="follow__description">
-                Aliquam augue vitae nisi faucibus, utricies mtus accumsan. Broder eletum diam sit amet
-                 opus vulputate. Praesent fermentum, felis sit amet lobortis euismod, massa leo efficitur 
-                 tortor, at lacinia mi orci eu purus. Aliquam augue vitae nisi faucibus, utricies mtus accumsan. 
-                 Broder eletum diam sit amet opus vulputate. Praesent fermentum, felis sit amet lobortis euismod, 
-                 massa leo efficitur tortor, at lacinia mi orci eu purus. Aliquam augue vitae nisi faucibus, utricies
-                  mtus accumsan. Broder eletum diam sit amet opus vulputate. Praesent fermentum, felis sit amet 
-                lobortis euismod, massa leo efficitur tortor, at lacinia mi orci eu purus. </p>
-            <div class="follow__bottom">
-                <a href="" class="button"><i class="fab fa-instagram"></i>Follow us </a>
-                <a href="" class="button"><i class="fab fa-telegram-plane"></i></span>Follow us </a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Follow Block End -->
 
-<section class="who section">
-    <div class="who__wrapper section__wrapper">
-        <div class="who__block">
-        <h3 class="section__title">Who we are</h3>
-        <p class="who__description">Aliquam augue vitae nisi faucibus, utricies mtus accumsan. Broder eletum diam sit amet opus vulputate. Praesent fermentum, felis sit amet lobortis euismod, massa leo efficitur tortor, at lacinia mi orci eu purus. Aliquam augue vitae nisi faucibus, utricies mtus accumsan. Broder eletum diam sit amet opus vulputate. Praesent fermentum, felis sit amet lobortis euismod, massa leo efficitur tortor, at lacinia mi orci eu purus. Aliquam augue vitae nisi faucibus, utricies mtus accumsan. Broder eletum diam sit amet opus vulputate. Praesent fermentum, felis sit amet lobortis euismod, massa leo efficitur tortor, at lacinia mi orci eu purus. </p>
-        <a href="#!">Read more</a>
+<section class="dict section">
+        <div class="dict__top"></div>
+
+    <div class="dict__wrapper section__wrapper" >
+        <div class="dict__row">
+            <div class="dict__col dict__col-active" id="kaz">
+                <div class="block">
+                    <textarea name="" cols="30" rows="10"  class="block__input">Алма</textarea>
+                    <div class="block__row">
+                        <a href="#!" class="block__improve">Аударманы жақсарту</a>
+                        <span class="block__lang">Қаз</span>
+                    </div>
+                    <div class="block__bottom">
+                        <div class="block__left">
+                            <a href="#!" class="copy" rel="#kaz">
+                                <div class="copy-message">
+                                    <span>Көшірілді</span>
+                                </div>
+                                    <i class="icon-copy"></i>
+                            </a>
+                            <a href="" class="keyboard">
+                                    <i class="icon-keyboard"></i>
+                            </a>
+                            <a  class="share">
+                                <div class="share-pop">
+                                    <i class="icon-twitter"></i>
+                                    <i class="icon-vk"></i>
+                                    <i class="icon-gplus"></i>
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-telegram"></i>
+                                </div>
+                                <i class="icon-share"></i>
+                            </a>
+                            <a href="#!" class="pin" rel="#kaz">
+                                <i class="icon-pin"></i>
+                                    
+                            </a>
+                        </div>
+                        <div class="block__right">
+                            <a  class="textsize" rel="#kaz">
+                                <div class="textsize-pop">
+                                    <input class="slider" type="range" min="16" max="72">
+                                </div>
+                                <i class="icon-font"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dict__transcript">
+                    <span><b>Алма</b>['Alma]</span>
+                    
+                </div>
+                <div class="dict__examples">
+                    <span class="dict__title">Мысалдар</span>
+                    <ul>
+                        <li>Алма ағашы </li>
+                        <li>Алма - ол жеміс </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dict__col" id="rus">
+                    <div class="block">
+                        <textarea name="" cols="30" rows="10"  class="block__input"  >Яблоко</textarea>
+                        <div class="block__row">
+                           
+                            <a href="#!" class="block__improve">Улучшить перевод</a>
+                            <span class="block__lang">Рус</span>
+                        </div>
+                        <div class="block__bottom">
+                            <div class="block__left">
+                                <a href="#!" class="copy" rel="#rus">
+                                <div class="copy-message">
+                                    <span>Скопировано</span>
+                                </div>
+                                    <i class="icon-copy"></i>
+                            </a>
+                                <a href="" class="keyboard">
+                                        <i class="icon-keyboard"></i>
+                                </a>
+                                <a class="share">
+                                        <div class="share-pop">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-vk"></i>
+                                            <i class="icon-gplus"></i>
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-telegram"></i>
+                                        </div>
+                                        <i class="icon-share"></i>
+                                    </a>
+                                <a href="#!" class="pin" rel="#rus">
+                                    <i class="icon-pin"></i>
+                                        
+                                </a>
+                            </div>
+                            <div class="block__right">
+                                    <a  class="textsize" rel="#rus">
+                                            <div class="textsize-pop">
+                                                <input class="slider" type="range" min="16" max="72">
+                                            </div>
+                                            <i class="icon-font"></i>
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dict__transcript">
+                        <span><b>Яблоко</b>[‘Yabloko]</span>
+                        <ul>
+                                <li>Яблочное дерево <a href="#!">сущ.</a></li>
+                                <li>Яблочный  <a href="#!">прил.</a></li>
+                            </ul>
+                    </div>
+                    <div class="dict__examples">
+                        <span class="dict__title">Примеры</span>
+                        <ul>
+                            <li>Яблочное дерево.</li>
+                            <li>Яблоко - это фрукт.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dict__col" id="eng">
+                <div class="block">
+                    <textarea name="" cols="30" rows="10"  class="block__input" >Apple</textarea>
+                    <div class="block__row">
+                        <a href="#!" class="block__improve">IMPROVE THE TRANSLATION</a>
+                        <span class="block__lang">Eng</span>
+                    </div>
+                    <div class="block__bottom">
+                        <div class="block__left">
+                           <a href="#!" class="copy" rel="#eng">
+                                <div class="copy-message">
+                                    <span>Copied</span>
+                                </div>
+                                    <i class="icon-copy"></i>
+                            </a>
+                            <a href="" class="keyboard">
+                                    <i class="icon-keyboard"></i>
+                            </a>
+                            <a  class="share">
+                                    <div class="share-pop">
+                                        <i class="icon-twitter"></i>
+                                        <i class="icon-vk"></i>
+                                        <i class="icon-gplus"></i>
+                                        <i class="icon-facebook"></i>
+                                        <i class="icon-telegram"></i>
+                                    </div>
+                                    <i class="icon-share"></i>
+                                </a>
+                            <a href="#!" class="pin" rel="#eng">
+                                <i class="icon-pin" ></i>
+                                    
+                            </a>
+                        </div>
+                        <div class="block__right">
+                                <a  class="textsize" rel="#eng">
+                                        <div class="textsize-pop">
+                                            <input class="slider" type="range" min="16" max="72">
+                                        </div>
+                                        <i class="icon-font"></i>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dict__transcript">
+                    <span><b>Apple</b>[æpl]</span>
+                    <ul>
+                            <li>Apple <a href="#!">noun</a></li>
+                        </ul>
+                </div>
+                <div class="dict__examples">
+                    <span class="dict__title">Examples</span>
+                    <ul>
+                        <li>Apple tree.</li>
+                        <li>Apple is a fruit.</li>
+                    </ul>
+                </div>
+            </div>
+               
         </div>
     </div>
 </section>
-<!-- Footer -->
+<section class="owl-carousel"></div>
+<div class="concordance">
+        <div class="concordance__top">
+            <div class="concordance__lang">
+                <span>Қазақша</span>
+            </div>
+
+        </div>
+        <div class="concordance__body">
+            <div class="concordance__line">
+                <span><b>Это красное</b>яблоко<b>такое вкусное</b></span>
+            </div>
+             <div class="concordance__line">
+                <span><b>Моя собака съела мое</b>яблоко<b>и убежала</b></span>
+            </div>
+            <div class="concordance__line">
+                <span><b>Мама принесла на работу</b>яблоко<b>и забыла о нем</b></span>
+            </div>
+             
+        </div>
+        
+  </div>
+  <div class="concordance">
+    <div class="concordance__top">
+        <div class="concordance__lang">
+            <span>На русском</span>
+        </div>
+
+    </div>
+    <div class="concordance__body">
+        <div class="concordance__line">
+            <span><b>Это красное</b>яблоко<b>такое вкусное</b></span>
+        </div>
+         <div class="concordance__line">
+            <span><b>Моя собака съела мое</b>яблоко<b>и убежала</b></span>
+        </div>
+        <div class="concordance__line">
+            <span><b>Мама принесла на работу</b>яблоко<b>и забыла о нем</b></span>
+        </div>
+         
+    </div>
+    
+</div>
+<div class="concordance">
+    <div class="concordance__top">
+        
+        <div class="concordance__lang">
+            <span>In English</span>
+        </div>
+
+    </div>
+    <div class="concordance__body">
+        <div class="concordance__line">
+            <span><b>Это красное</b>яблоко<b>такое вкусное</b></span>
+        </div>
+         <div class="concordance__line">
+            <span><b>Моя собака съела мое</b>яблоко<b>и убежала</b></span>
+        </div>
+        <div class="concordance__line">
+            <span><b>Мама принесла на работу</b>яблоко<b>и забыла о нем</b></span>
+        </div>
+         
+    </div>
+    
+</div>
+    </section>
 <footer class="footer section">
     <div class="footer__wrapper section__wrapper">
-        <div class="footer__left">
-            <span>Fine Fashion Consulting   </span>
-            <div class="line">|</div>
-            <div class="footer__menu">
-                    <a href="#!">Jobs</a>
-                    <a href="#!">Consulting</a>
-                    <a href="#!">About</a>
-                    <a href="#!">Contacts</a> 
-            </div>
-        </div>
-        <div class="footer__links">
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-telegram-plane"></a>
-        </div>
+        <span>Все права защищены ТОО "3 TIL" 2018</span>
     </div>
 </footer>
-<!-- Footer End-->
+
 
 
 
@@ -142,7 +317,7 @@
 
 
 
-
+<script src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

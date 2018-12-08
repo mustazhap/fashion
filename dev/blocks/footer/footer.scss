@@ -1,51 +1,15 @@
-// Footer
 .footer{
     &__wrapper{
+        height: 50px;
         display: flex;
-        justify-content: space-between;
-        height: 70px;
         align-items: center;
-    }
-
-    &__left{
-        display: flex;
-        color: #4d4e4f;
-        font-family: $Lato;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 25px;
-        a{
-            color: #4d4e4f;
-        }
-        div{
-            margin-right: 10px;
-            margin-left: 10px;
-            &:last-child{
-                margin-left: 0;
-            }
-        }
-    }
-
-    &__menu{
-        display: flex;
-        margin: 0;
-        a{
-            margin-right: 10px;
-        }
-    }
-
-    &__links{
-        display: flex;
-        color: #4d4e4f;
-        a{
-            margin-right: 15px;
-            color: #4d4e4f;
-            text-decoration: none;
-            &:last-child{
-                margin-right: 0;
-            }
+        background: white;
+        justify-content: center;
+        
+        span{
+            font-size: 14px;
+            color: #9d9d9d;
+            font-family: Arial;
         }
     }
 }
-
-// Footer End

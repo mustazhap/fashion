@@ -7,7 +7,7 @@ html, body{
   padding: 0;
   height: 100%;
   min-height: 100%;
-  font-family: $Montserrat;
+  font-family: $SP;
   box-sizing: border-box;
   position: relative;
   *{
@@ -15,53 +15,18 @@ html, body{
   }
 }
 
-a{
-  text-decoration: none;
-  &:hover{
-    text-decoration: underline;
-  }
-}
 
 // import files of blocks [Basic]
-@import "../../blocks/button/button";
-@import "../../blocks/elements/elements";
 @import "../../blocks/section/section";
 
 // Index
 @import "../../blocks/header/header";
-@import "../../blocks/promo/promo";
-@import "../../blocks/priority/priority";
-@import "../../blocks/follow/follow";
-@import "../../blocks/who/who";
-@import "../../blocks/about/about";
-
-// Admin
-@import "../../blocks/jobs/jobs";
-@import "../../blocks/sidebar/sidebar";
-
-// Post
-@import "../../blocks/post/post";
-
-// Contact
-@import "../../blocks/contact/contact";
-
-// Detail Job
-@import "../../blocks/detail/detail";
-
-// Apply for Job
-@import "../../blocks/apply/apply";
-
-// Search Page
-@import "../../blocks/search/search";
-
-// Signin
-@import "../../blocks/signin/signin";
-
-// Register
-@import "../../blocks/register/register";
+@import "../../blocks/dict/dict";
 
 
+// Footer :)
 @import "../../blocks/footer/footer";
+
 
 
 

@@ -1,14 +1,35 @@
 <!-- Header -->
 <header class="header section">
-    <div class="header__wrapper section__wrapper section__wrapper_full">
-       <a href="/" class="header__logo"><img src="assets/img/logo.png" alt="Logo"></a>
-       <nav class="header__nav">
-           <a href="#!">Jobs</a>
-           <a href="#!">Consulting</a>
-           <a href="#!">About</a>
-           <a href="#!">Contacts</a>           
-       </nav>
-       <div class="header__signin header__signin_admin"><div data-icon="&#xe08a"></div><span>Sign In</span> </div>
+    <div class="header__wrapper section__wrapper">
+       <a href="/" class="header__logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </a>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-item active">Главная</a>
+            <a href="#" class="header__nav-item">Наши партнеры</a>
+            <a href="#" class="header__nav-item">О проекте</a>
+            <a href="#" class="header__nav-item">Контакты</a>
+        </nav>
+        <div class="burger-wrap">
+            <a class="burger">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <nav class="burger__nav">
+                <a href="#" class="header__nav-item active">Главная</a>
+                <a href="#" class="header__nav-item">Наши партнеры</a>
+                <a href="#" class="header__nav-item">О проекте</a>
+                <a href="#" class="header__nav-item">Контакты</a>
+            </nav>
+            <div class="burger__footer">
+                <span>
+                    Все права защищены <br>ТОО "3 TIL" 2018
+                </span>
+            </div>
+        </div>
     </div>
 </header>
 <!-- Header End -->

@@ -1,154 +1,292 @@
  $(document).ready(function(){
-  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-  // Menu
-  $(".jobs__menu").click(function(){
-    if($(this).hasClass("animated")){
-      $(".sidebar").css("left", "0");
-        if (w > 600){
-        $(this).css("left","360px").removeClass("animated").find("i").css("transform", "rotate(180deg)");
-        }else{
-            $(this).css({"left":"90%"}).removeClass("animated").find("i").css("transform", "rotate(180deg)");
-            $("body").css("overflow","hidden");
+    //Settings
+    var a;
+    var blocks = [0,1,2];
+    var owl = $('.owl-carousel');
+    var siz = $(".block").width();
+    for (i = 0; i < blocks.length; ++i) {
+        switch (i) {
+            case 0:
+                $(".dict__col").eq(blocks[i]).css("left", "0");
+            break;
+            case 1:
+            $(".dict__col").eq(blocks[i]).css("left", siz +45 + "px");
+            break;
+            case 2:
+            $(".dict__col").eq(blocks[i]).css("left", (siz+45)*2 +"px");
+            break;
         }
-    }else{
-      // $("body").css("overflow-x", "visible");
-      $(".sidebar").css("left", "-100%");
-      $("body").css("overflow","auto");
-      // $(".jobs").css({"position": "relative", "left": "0px"});
-      $(this).css("left","15px").addClass("animated").find("i").css("transform", "rotate(0)");  
     }
-  });
-// 
 
+    $(".dict__row").css("width", siz*3 + 90 + "px");
 
-// Select menu
-
-$('select').each(function(){
-  var $this = $(this), numberOfOptions = $(this).children('option').length;
-
-  $this.addClass('select-hidden'); 
-  $this.wrap('<div class="select"></div>');
-  $this.after('<div class="select-styled"></div>');
-
-  var $styledSelect = $this.next('div.select-styled');
-  $styledSelect.text($this.children('option').eq(0).text());
-
-  var $list = $('<ul />', {
-      'class': 'select-options'
-  }).insertAfter($styledSelect);
-
-  for (var i = 0; i < numberOfOptions; i++) {
-      $('<li />', {
-          text: $this.children('option').eq(i).text(),
-          rel: $this.children('option').eq(i).val()
-      }).appendTo($list);
-  }
-
-  var $listItems = $list.children('li');
-
-  $styledSelect.click(function(e) {
-      e.stopPropagation();
-      $('div.select-styled.active').not(this).each(function(){
-          $(this).removeClass('active').next('ul.select-options').hide();
-      });
-      $(this).toggleClass('active').next('ul.select-options').toggle();
-  });
-
-  $listItems.click(function(e) {
-      e.stopPropagation();
-      $styledSelect.text($(this).text()).removeClass('active');
-      $this.val($(this).attr('rel'));
-      $list.hide();
-      //console.log($this.val());
-  });
-
-  $(document).click(function() {
-      $styledSelect.removeClass('active');
-      $list.hide();
-  });
-
-});
-
-// 
-
-
-// Textarea
-$(".textarea").click(function(event){
-    if($(".contact__mail").css("right") == "10px"){
-        $(".contact__mail").css({"opacity":"0", "visibility":"hidden"});
-    }
-    $(document).click(function() {
-        $(".contact__mail").css({"opacity":"1", "visibility":"visible"});
-    });
-})
-
-// 
-
-// File Upload
-$( '.file' ).each( function()
-	{
-		var $input	 = $( this ),
-			$label	 = $input.next( 'label' ),
-			labelVal = $label.html();
-
-		$input.on( 'change', function( e )
-		{
-			var fileName = '';
-
-			if( this.files && this.files.length > 1 )
-				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-			else if( e.target.value )
-				fileName = e.target.value.split( '\\' ).pop();
-
-			if( fileName )
-				$label.find( 'span' ).html( fileName );
-			else
-				$label.html( labelVal );
-		});
-
-		// Firefox bug fix
-		$input
-		.on( 'focus', function(){ $input.addClass( 'has-focus' ); })
-		.on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
-    });
-// 
-
-// Popup - Apply for Job
-
-    $(".apply-button").click(function(){
-        $(".apply").show().css("display", "flex");
+    // Burger menu
+    var c = true;
+    $(".burger" ).click(function(event) {
+        $(this).toggleClass("burger_active"); 
+        
+        if (c){
+        $("#burger-menu").css("right", "0");
+        c = false;
         $("body").css("overflow", "hidden");
-    });
-    $(".apply__wrapper").click(function(event){
-        event.stopPropagation();        
-    });
-    $(".fa-times").click(function(){
-        $(".apply").hide();
+        }else{
+        $("#burger-menu").css("right", "-100%");
+        c = true;
         $("body").css("overflow", "auto");
         
+        }
+        event.stopPropagation();
     });
-    $(".apply").click(function(){
-        $(".apply").hide();
+    $(".burger-menu" ).click(function(event) {
+       
+        
+        event.stopPropagation();
+    });
+   
+    // 
+
+    // Animation of blocks and pin
+    $(".dict__col").click(function(){
+        a = $(this).index();
+    
+        
+       
+        if($(".dict__col").eq(blocks[0]).hasClass("pinned") && a !== blocks[0]){
+            blocks = jQuery.grep(blocks, function(value) {
+                return value != a;
+            });
+            var b0 = blocks[0];
+            blocks = jQuery.grep(blocks, function(value) {
+                return value != blocks[0];
+            });
+            blocks.unshift(a);
+            blocks.unshift(b0);
+            if($(".dict__col").eq(blocks[2]).hasClass("pinned") || $(".dict__col").eq(blocks[1]).hasClass("pinned")){
+                return false;
+            }
+            else{
+                var i;
+                for (i = 0; i < blocks.length; ++i) {
+                    $(".dict__col").eq(i).removeClass("dict__col-active");
+                    $(this).addClass("dict__col-active");
+                    owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+
+                    switch (i) {
+                        case 0:
+                            $(".dict__col").eq(blocks[i]).css("left", "0");
+                        break;
+                        case 1:
+                        $(".dict__col").eq(blocks[i]).css("left", siz+45 + "px");
+                        break;
+                        case 2:
+                        $(".dict__col").eq(blocks[i]).css("left", (siz+45)*2 +"px");
+                        break;
+                    }
+                }
+            }
+        }if($(".dict__col").eq(blocks[0]).hasClass("pinned") && a === blocks[0]){
+            return false;
+        }
+        
+        // Second
+        if($(".dict__col").eq(blocks[1]).hasClass("pinned") && a === blocks[2]){
+            var tem = blocks[0];
+            var tem2 = blocks[2];
+            blocks[2] = tem;
+            blocks[0] = tem2;
+
+            if($(".dict__col").eq(a).hasClass("pinned")){
+
+                return false;
+            }
+            else{
+                var i;
+                for (i = 0; i < blocks.length; ++i) {
+                    $(".dict__col").eq(i).removeClass("dict__col-active");
+                    $(this).addClass("dict__col-active");
+                    owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+
+                    switch (i) {
+                        case 0:
+                            $(".dict__col").eq(blocks[i]).css("left", "0");
+                        break;
+                        case 1:
+                        $(".dict__col").eq(blocks[i]).css("left", siz+45 + "px");
+                        break;
+                        case 2:
+                        $(".dict__col").eq(blocks[i]).css("left", (siz+45)*2 +"px");
+                        break;
+                    }
+                }
+            }
+        }
+        if($(".dict__col").eq(blocks[2]).hasClass("pinned") && a === blocks[1]){
+            var tem = blocks[0];
+            var tem2 = blocks[1];
+            blocks[1] = tem;
+            blocks[0] = tem2;
+
+            if($(".dict__col").eq(a).hasClass("pinned")){
+                return false;
+            }
+            else{
+                var i;
+                for (i = 0; i < blocks.length; ++i) {
+                    $(".dict__col").eq(i).removeClass("dict__col-active");
+                    $(this).addClass("dict__col-active");
+                    
+                        owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+                       
+                        switch (i) {
+                            case 0:
+                                $(".dict__col").eq(blocks[i]).css("left", "0");
+                            break;
+                            case 1:
+                            $(".dict__col").eq(blocks[i]).css("left", siz +45+ "px");
+                            break;
+                            case 2:
+                            $(".dict__col").eq(blocks[i]).css("left", (siz+45)*2 +"px");
+                            break;
+                        }
+                }
+            }
+        }
+        if(!$(".dict__col").eq(blocks[2]).hasClass("pinned") && !$(".dict__col").eq(blocks[0]).hasClass("pinned") && !$(".dict__col").eq(blocks[1]).hasClass("pinned")){
+            blocks = jQuery.grep(blocks, function(value) {
+                return value != a;
+            });
+            blocks.unshift(a);
+            var i;
+            for (i = 0; i < blocks.length; ++i) {
+                $(".dict__col").eq(i).removeClass("dict__col-active");
+                $(this).addClass("dict__col-active");
+                owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+
+                switch (i) {
+                    case 0:
+                        $(".dict__col").eq(blocks[i]).css("left", "0");
+                    break;
+                    case 1:
+                    $(".dict__col").eq(blocks[i]).css("left", siz+45 + "px");
+                    break;
+                    case 2:
+                    $(".dict__col").eq(blocks[i]).css("left", (siz+45)*2 +"px");
+                    break;
+                }
+            }
+        }
+    });
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
+    // Кнопка Copy
+    $(".copy").click(function(event){
+        // Копирование в буфер
+        var $temp = $("<input>");
+        $("body").append($temp);
+        var element = $(this).attr("rel");
+        $temp.val($(element).find("textarea").val()).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+        // Подсказка
+        var a = $(this);
+        a.find(".copy-message").fadeIn();
+        setTimeout(function(){
+            a.find(".copy-message").fadeOut();
+         }, 1000);
+        event.stopPropagation(); 
+    })
+    // 
+
+     // Кнопка Pin
+     $(".pin").click(function(event){
+        $($(this).attr("rel")).toggleClass("pinned");
+        $(this).toggleClass("pin-active");
+        event.stopPropagation(); 
+    })
+    // 
+var sd = true;
+    // Кнопка TextSize
+    $(".textsize").click(function(event){
+        $(this).toggleClass("pin-active");
+        if(sd){
+        $(this).find(".textsize-pop").show().css("display", "flex");
+        sd = false;
+        }else{
+            $(this).find(".textsize-pop").hide();
+            sd = true;
+        }
+        event.stopPropagation(); 
+    });
+       
+ 
+    $('.slider').on('change', function () {
+        var as = $(".textsize").attr("rel");
+        var v = $(this).val();
+        $(as).find("textarea").css('font-size', v + 'px')
+        // $('span').html(v);
+    });
+    // 
+    var sd = true;
+     // Кнопка Share
+     $(".share").click(function(event){
+        $(this).toggleClass("pin-active");
+        
+        if(sd){
+            $(this).find(".share-pop").show().css("display", "flex");
+            sd = false;
+            }else{
+                $(this).find(".share-pop").hide();
+                sd = true;
+            }
+        event.stopPropagation(); 
+    });
+    $("body").click(function(){
+        $(".share-pop").hide();
+        $(".share").removeClass("pin-active");
+        $(".textsize-pop").hide();
+        $(".textsize").removeClass("pin-active");
+        $("#burger-menu").css("right", "-100%");
+        c = true;
         $("body").css("overflow", "auto");
+    })
+ 
+    // 
+    
 
+
+    // Одинаковые высоты для колонок
+    var maxheight = 0;
+    $(".dict__transcript").each(function() {
+    if($(this).height() > maxheight) { maxheight = $(this).height(); }
     });
-});
-// 
+    $(".dict__transcript").height(maxheight);
 
-// Spoiler
-$(".spoiler__title").click(function(){
-    $(this).toggleClass("spoiler__title-active");
-    $(this).next().slideToggle();
-})
+    $(".dict__examples").each(function() {
+        if($(this).height() > maxheight) { maxheight = $(this).height(); }
+        });
+    $(".dict__examples").height(maxheight);
 
-// 
+    // Высота для dict__row
+    $(".dict__row").css("height", $(".dict__col").height());
+    // 
 
-// Filter
-$(".filter-show").click(function(){
-    $(".search__col").slideToggle();
-});
 
-$(".filter-cancel").click(function(){
-    $(".search__col").slideToggle();
 });

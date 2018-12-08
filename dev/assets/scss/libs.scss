@@ -1,14 +1,46 @@
-@import 'libs/animate.css';
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
-.animated {
+@import "libs/owl.carousel.css";
+@import "libs/owl.theme.default.css";
 
-  animation-duration: 2s;
-  
- 
-  animation-delay: 1s;
+.owl-item{
+    position: relative;
+    
 }
 
-
-  .slideInLeft{
-      animation-iteration-count: infinite;
-  }
+.owl-nav{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 293px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -146px;
+    z-index: 8;
+    
+    span{
+        font-size: 16px;
+    }
+    button{
+        width: 36px;
+        height: 36px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid rgba(151,151,151,.2) !important;
+        color: #000;
+        background: #fff !important;
+        text-decoration: none;
+        display: -webkit-box;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        &:focus, &:active{
+            outline: none;
+        }
+    }
+}

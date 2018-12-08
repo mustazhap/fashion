@@ -1,21 +1,12 @@
-# front of site Fashion
+# front of 3 language dictionary
 
-back: Akberdi Otkelbay  
 front: Mustazhap Rustem 
 
 
 #to do:
-- [x] Admin Posts
-- [x] Admin no jobs
-- [x] Admin Post
-- [x] Contact Page
-- [x] Job Open Page
-- [x] Apply popup
-- [x] Job Search Page 
-- [ ] Main Page - Carousel.JS / Adaptive
-- [ ] Pricing Page 
-- [ ] About Page - Adaptive
-- [x] Sign in 
-- [x] Sign Up
-- [ ] Bags, other features
-
+1. [x] Адаптивная под все устройства и ОС верстка
+2. [x] Динамика при смене языка
+3. [x] Кнопка копировать текст 
+4. [x] Кнопка Share в соц сети
+5. [x] Кнопка Пин чтобы закрепить окно, чтобы оно не двигалось
+6. [x] Раздел корконданс-слайдер. Это примеры использования слов

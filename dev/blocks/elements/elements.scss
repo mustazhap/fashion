@@ -20,6 +20,10 @@
         font-weight: 400;
         line-height: 15px;
     }
+
+    &:active, &:focus{
+      border-color: $main;
+    }
 }
 // 
 

@@ -1,25 +1,26 @@
 .who{
-    padding-top: 279px;
+    position: relative;
     padding-bottom: 159px;
     &__wrapper{
         display: flex;
-        padding-top: 264px;
+        padding-top: 204px;
         justify-content: flex-start;
         padding-bottom: 188px;
-    }
 
-    &__block{
-        max-width: 566px;
-        position: relative;
         &:after{
             content: "";
             width: 651px;
             height: 782px;
             background: url("../img/who-bg.png") no-repeat;
             position: absolute;
-            top: -264px;
-            right: -735px;
+            top:0;
+            right: 100px;
         }
+    }
+
+    &__block{
+        max-width: 566px;
+        
     }
     &__title{
         color: #000000;

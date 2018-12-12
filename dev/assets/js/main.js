@@ -152,3 +152,36 @@ $(".filter-show").click(function(){
 $(".filter-cancel").click(function(){
     $(".search__col").slideToggle();
 });
+
+// Owl
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    dots: false,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            dots: true
+        },
+        600:{
+            items:3
+        },
+        600:{
+            items:2
+        },
+        940:{
+            items:3
+        },
+        1200:{
+            items:4
+        },
+        1600:{
+            items:5
+        }
+    
+    }
+})

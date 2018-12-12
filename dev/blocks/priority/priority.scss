@@ -1,6 +1,5 @@
 .priority{
     &__wrapper{
-        padding-top: 113px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -8,17 +7,20 @@
     }
 
      &__row{
-         margin-top: 60px;
-         display: flex;
+         margin-top: 20px;
      }
-
+     .slick-next{
+         display: none !important;
+     }
      &__item{
          background: #f1f1f2;
          padding: 42px 32px;
-         width: 371px;
+         width: 371px !important;
+         box-sizing: border-box;
          height: 260px;
+         margin: 10px;
          border-radius: 5px;
-         display: flex;
+         display: flex !important;
          flex-direction: column;
          justify-content: space-between;
 

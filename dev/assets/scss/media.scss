@@ -38,9 +38,7 @@
         padding-bottom: 0;
         padding-top: 0;
     }
-    .follow{
-        margin-bottom: 140px;
-    }
+    
 
     .who__wrapper{
         padding-top: 0;
@@ -65,13 +63,60 @@
 }
 
 @media screen and (max-width: 1400px){
-    // Sidebar
-    .sidebar{
-        transition: all .5s ease;
-        left: -100%;
+    
+    .search__sidebar{
+        max-width: 300px;
     }
-    // 
 
+    .post{
+        .input__text{
+            max-width: 300px;
+        }
+        .select{
+            max-width: 300px;
+        }
+    }
+    .jobs__item-title{
+        font-size: 17px;
+    }
+
+    .jobs__item-text{
+        font-size: 14px;
+    }
+    .promo__title{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .jobs__item-statis{
+        margin-top: 10px;
+    }
+    .jobs__item-logo{
+        width: 80px;
+        height: 80px;
+    }
+    .jobs__item-info{
+        padding-top: 5px;
+    }
+    .jobs__item-stat{
+        font-size: 14px;
+    }
+    .jobs__item-controll{
+        a{
+            font-size: 14px;
+            i{
+                margin-right: 1px;
+            }
+        }
+    }
+    .sidebar__menu-item{
+        span{
+            font-size:18px;
+            margin-left: 20px;
+        }
+        i{
+            font-size: 25px;
+        }
+    }
     .about{
         &__wrapper{
            
@@ -89,10 +134,14 @@
     .jobs{
         transition: all .5s ease;
         margin-left: 0;
+
+        &__not{
+            span{
+                font-size: 30px;
+            }
+        }
     }
-    .jobs__menu{
-        display: block;
-    }
+   
     // 
 
     // Post
@@ -117,7 +166,33 @@
            margin-left: 0;
        }
     }
-    //    
+    .sidebar__bottom{
+        padding-left: 30px;
+    }
+    .post{
+        width: 100%;
+    }
+    //   
+     // Sidebar
+    .sidebar{
+        transition: all .5s ease;
+        left: -100%;
+        min-width: 300px;
+    }
+    // 
+    .jobs__menu{
+        display: block;
+    }
+    .jobs{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .promo__title{
+        font-size: 37px;
+        line-height: 1.2;
+    }
 
     .priority{
         &__item{
@@ -126,9 +201,10 @@
     }
     // Section
     .section__wrapper{
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 50px;
+        margin-left: 50px;
     }
+
     // 
 
     // Contact
@@ -212,7 +288,7 @@
 
 .follow__block{
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
 }
 .follow__wrapper{
     align-items: center;
@@ -303,7 +379,14 @@
         flex-direction: column;
         margin-top: 10px;
     }
-
+    .who__description, .follow__description{
+        margin-top: 0;
+    }
+    .who, .follow{
+        .section__title{
+            margin-bottom: 10px;
+        }
+    }
     .search__item-text{
         line-height: 20px;
     }
@@ -329,13 +412,14 @@
 
 @media screen and (max-width: 940px){
     .priority{
-        &__wrapper{
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+       
         &__item{
             width: 400px;
         }
+    }
+
+    .promo__title{
+        font-size: 28px;
     }
 
     
@@ -491,6 +575,13 @@
 }
 
 @media screen and (max-width: 600px){
+    .promo__wrapper{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .promo__title{
+        font-size: 23px;
+    }
     .priority{
         &__item{
             width: 100%;
@@ -539,17 +630,16 @@
             padding-top: 0;
         }
     }
-    .promo__title{
-        font-size: 27px;
-        line-height: 1.2;
-    }
+   
     .promo__wrapper{
-        padding-top: 40px;
+        padding-top: 20px;
         padding-bottom: 40px;
     }
     .promo{
         .button{
             margin-top: 40px;
+            width: 170px;
+            height: 46px;
         }
     }
     .priority__row{
@@ -586,13 +676,20 @@
     }
     // 
     .follow__bottom{
+        flex-direction: column;
         .button{
-            &:last-child{
-                margin-right: 0;
-            }
+            margin: 0;
+            margin-top: 10px;
         }
     }
-
+    .section__wrapper{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .follow__wrapper:after, .who__wrapper:after{
+        width: 250px;
+        height: 250px;
+    }
     // Detail Job
     .detail__top{
         flex-direction: column;
@@ -630,6 +727,10 @@
         }
     }
     // 
+    .priority__item{
+        width: 300px !important;
+        height: 230px;
+    }
 }
 
 @media screen and (max-width: 420px){

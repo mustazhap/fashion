@@ -2,11 +2,11 @@
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
   // Menu
-  $(".jobs__menu").click(function(){
+  $(".jobs__menu").click(function(e){
     if($(this).hasClass("animated")){
       $(".sidebar").css("left", "0");
         if (w > 600){
-        $(this).css("left","360px").removeClass("animated").find("i").css("transform", "rotate(180deg)");
+        $(this).css("left","330px").removeClass("animated").find("i").css("transform", "rotate(180deg)");
         }else{
             $(this).css({"left":"90%"}).removeClass("animated").find("i").css("transform", "rotate(180deg)");
             $("body").css("overflow","hidden");
@@ -18,9 +18,18 @@
       // $(".jobs").css({"position": "relative", "left": "0px"});
       $(this).css("left","15px").addClass("animated").find("i").css("transform", "rotate(0)");  
     }
+    event.stopPropagation();
+
   });
 // 
-
+$("body").click(function(){
+    $("body").css("overflow","auto");
+    $(".sidebar").css("left", "-100%");
+    $(".jobs__menu").css("left","15px").addClass("animated").find("i").css("transform", "rotate(0)");  
+})
+$(".sidebar").click(function(event){
+    event.stopPropagation();
+})
 
 // Select menu
 
@@ -153,35 +162,17 @@ $(".filter-cancel").click(function(){
     $(".search__col").slideToggle();
 });
 
-// Owl
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    autoplay:true,
+
+
+
+$('.priority__row').slick({
     dots: false,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            dots: true
-        },
-        600:{
-            items:3
-        },
-        600:{
-            items:2
-        },
-        940:{
-            items:3
-        },
-        1200:{
-            items:4
-        },
-        1600:{
-            items:5
-        }
-    
-    }
-})
+    infinite: true,
+    speed: 300,
+    centerMode: true,
+    variableWidth: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });

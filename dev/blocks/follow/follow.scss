@@ -1,7 +1,7 @@
 // Follow
 .follow{  
     position: relative;
-
+    margin-bottom: 40px;
     &__wrapper{
         display: flex;
         padding-top: 200px;
@@ -48,6 +48,9 @@
         i{
             margin-right: 16px;
             font-size: 18px;
+        }
+        &:last-child{
+            margin-right: 0;
         }
     }
 }

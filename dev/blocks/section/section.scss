@@ -14,7 +14,6 @@
       font-weight: bold;
       color: #2b2b2b;
       font-size: 28px;
-      text-align: center;
     }
 
     &__row{
@@ -30,6 +29,9 @@
         top: 176px;
         display: none;
       }
+      .section__title{
+        text-align: center;
+      }
 
       &_transparent{
         height: 0;
@@ -42,6 +44,8 @@
       position: relative;
       margin-top: 100px;
       transition: all 0.5s ease;
+      justify-content: flex-end;
+      width: 100%;
       
     }
 

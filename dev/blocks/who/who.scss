@@ -1,6 +1,7 @@
 .who{
     position: relative;
     padding-bottom: 159px;
+    margin-bottom: 40px;
     &__wrapper{
         display: flex;
         padding-top: 204px;
@@ -39,9 +40,18 @@
         margin-bottom: 3px;
     }
 
-    &__more{
-        color: #00aff0;
-    }
+    
+        
+        a{
+            color: #00aff0;
+            margin-top: 20px;
+            display: flex;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+    
+   
 
     .button{
         width: 209px;

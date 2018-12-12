@@ -1,10 +1,11 @@
 .promo{
+    height: calc(100vh - 100px);
     &__wrapper{
-        padding-top: 209px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 113px;
+        justify-content: center;
+        height: 100%;
     }
 
     &__title{
@@ -20,6 +21,6 @@
 
     .button{
         width: 218px;
-        margin-top: 72px;
+        margin-top: 55px;
     }
 }

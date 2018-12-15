@@ -30,13 +30,17 @@
             }
             
             span{
-                margin-left: 45px;
-                font-size: 24px;
+                margin-left: 25px;
+                font-size: 18px;
                 font-weight: 700;
                 line-height: 15px;
             }
             i{
                 font-size: 26px;
+                width: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             &_active{
                 background: $dark;

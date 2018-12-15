@@ -55,14 +55,14 @@
     }
     &__item{
         position: relative;
-        padding: 35px 0;
+        padding: 20px 0;
         display: flex;
         width: 100%;
         border-bottom: 1px solid #e3e5e7;
 
         &-logo{
-            width: 110px;
-            height: 110px;
+            width: 90px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -73,13 +73,13 @@
         }
         &-title{
             color: $main;
-            font-size: 25px;
+            font-size: 18px;
             font-weight: 700;
             line-height: 20.88px;
         }
 
         &-info{
-            padding-top: 25px;
+            padding-top: 10px;
             display: flex;
             flex-direction: column;
 
@@ -92,7 +92,7 @@
         &-text{
             color: $text;
             font-family: $Lato;
-            font-size: 19px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 33.4px;
             display: flex;
@@ -110,13 +110,13 @@
 
         &-statis{
             display: flex;
-            margin-top: 55px;
+            margin-top: 5px;
         }
 
         &-stat{
             color: $text;
             font-family: $Lato;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 24px;
             margin-right: 44px;
@@ -144,7 +144,8 @@
             right: 0;
             margin-top: -10px;
             a{
-                margin-right: 40px;
+                margin-right: 20px;
+                font-size: 14px;
 
                 &:last-child{
                     margin-right: 0;
@@ -158,7 +159,7 @@
             }
 
             i{
-                margin-right: 11px;
+                margin-right: 5px;
             }
 
             .pause{

@@ -13,7 +13,7 @@
     }
 
     &__block{
-        width: 371px;
+        width: 330px;
         border: 1px solid #e3e5e7;
         display: flex;
         padding-top: 36px;
@@ -36,17 +36,17 @@
     &__type{
         color: $text;
         font-family: $Montserrat;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 700;
     }
 
     
     &__number{
-        margin-top: 30px;
-        margin-bottom: 37px;
+        margin-top: 10px;
+        margin-bottom: 20px;
         color: $text;
         font-family: $Montserrat;
-        font-size: 75px;
+        font-size: 45px;
         font-weight: 700;
     }
 
@@ -67,16 +67,16 @@
         }
     }
     .button{
-        width: 160px;
-        height: 53px;
+        width: 140px;
+        height: 43px;
     }
 
     &__text{
         color: #6b6d6e;
         font-family: $Lato;
         padding: 0 21px;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 25px;
+        line-height: 1.2;
     }
 }

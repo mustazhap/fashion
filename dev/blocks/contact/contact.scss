@@ -36,7 +36,7 @@
         span{
             margin-top: 10px;
             color: $text;
-            font-size: 21px;
+            font-size: 18px;
             font-weight: 700;
             line-height: 1;
         }
@@ -44,7 +44,7 @@
 
     &__title{
         color: $main;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         line-height: 1;
     }
@@ -52,7 +52,7 @@
     &__subtitle{
         color: #6b6d6e;
         font-family: $Lato;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         margin-bottom: 29px;
     }
@@ -60,7 +60,9 @@
         margin-top: 28px;
         max-width: 203px;
     }
-    
+    .input__text{
+        margin-bottom: 15px;
+    }
     &__question{
         color: $text;
         font-size: 18px;

@@ -23,9 +23,11 @@
   });
 // 
 $("body").click(function(){
-    $("body").css("overflow","auto");
-    $(".sidebar").css("left", "-100%");
-    $(".jobs__menu").css("left","15px").addClass("animated").find("i").css("transform", "rotate(0)");  
+    if(w < 1250){
+        $("body").css("overflow","auto");
+        $(".sidebar").css("left", "-100%");
+        $(".jobs__menu").css("left","15px").addClass("animated").find("i").css("transform", "rotate(0)");  
+    }
 })
 $(".sidebar").click(function(event){
     event.stopPropagation();

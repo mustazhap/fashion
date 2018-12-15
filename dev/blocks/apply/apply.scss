@@ -17,7 +17,7 @@
         margin: 40px;
         max-width: 894px;
         width: 100%;
-        padding: 55px 25px 30px;
+        padding: 45px 25px 30px;
         background: #fff;
         box-sizing: border-box;
         position: relative;
@@ -39,13 +39,13 @@
     }
 
     &__title{
-        font-size: 24px;
+        font-size: 20px;
         color: $main;
         display: flex;
         line-height: 1;
         padding-bottom: 15px;
         border-bottom: 3px solid $main;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         font-weight: 700;
     }
 
@@ -61,9 +61,9 @@
 
     &__caption{
         line-height: 1;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         color: $text;
     }
 
@@ -81,7 +81,7 @@
     &__descr{
         padding-left: 25px;
         font-family: $Lato;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1;
         color: #999fa2;
     }
@@ -90,8 +90,17 @@
         display: flex;
         justify-content: flex-end;
         .button{
-            width: 190px;
+            width: 160px;
+            height: 40px;
         }
+    }
+    .input__text{
+        margin-bottom: 20px;
+    }
+    .file__label{
+        width: 140px;
+        font-size: 14px;
+        height: 40px;
     }
 }
 // Apply End

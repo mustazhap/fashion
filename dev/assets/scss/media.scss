@@ -510,9 +510,7 @@ padding-top: 0;
         max-width: 100%;
         margin: 0;
     }
-    .apply__bottom{
-        margin-bottom: 40px;
-    }
+    
     // 
 
     .follow__wrapper, .who__wrapper{
@@ -728,7 +726,7 @@ padding-top: 0;
 
     .apply__descr{
         padding-left: 0;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     // 
 
@@ -903,7 +901,6 @@ padding-top: 0;
     // Apply for Job (Modal)
 
     .apply__wrapper{
-        height: 100%;
         overflow-y: auto;
         padding-top: 30px;
     }
@@ -940,6 +937,9 @@ padding-top: 0;
         &__bottom{
             margin-bottom: 0;
         }
+        &__row{
+            margin-bottom: 20px;
+        }
     }   
 }
 
@@ -967,5 +967,7 @@ padding-top: 0;
         .button{
             height: 35px;
         }
+        
     }   
+
 }
